@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Parallax Animation</title>
+  </head>
+  <body>
+    <!-- tämä divi pitää tilan jonka päälle pistetään fiksatut divit-->
+    <div class="hero">
+      <div class="hero_layer kuva1" data-type="parallax" data-speed="5"></div>
+      <div class="hero_layer kuva2" data-type="parallax" data-speed="20"></div>
+      <div class="hero_layer kuva3" data-type="parallax" data-speed="40"></div>
+      <div class="hero_layer kuva4" data-type="parallax" data-speed="60 "></div>
+      <div class="hero_layer kuva5" data-type="parallax" data-speed="80"></div>
+      <div class="hero_layer kuva6" data-type="parallax" data-speed="100"></div>
+    </div>
+    <main>
+      <h1>Parallax scroll</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        quisquam praesentium soluta iure animi iusto aut illo ducimus sit natus
+        cupiditate quod nulla, illum blanditiis libero, in quae enim distinctio.
+        Dolor delectus quia facere dicta. Debitis, est temporibus corrupti saepe
+        ducimus nihil illo, ipsum non ut voluptates quod adipisci eligendi?
+      </p>
+    </main>
+    <div class="mouseparallax">
+      <h2>Mouse parallax</h2>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function (event) {
+        var top = this.pageYOffset;
+        console.log(top);
+
+        var layers = document.querySelectorAll("[data-type='parallax']");
+        console.log(layers);
+
+        var layer, speed, yPos
+
+        for (var i = 0; i < layers.length; i++) {
+          layer = layers[i];
+          speed = layer.getAttribute("data-speed");
+          var yPos = -((top * speed) / 100);
+          layer.setAttribute(
+            "style",
+            "transform: translate3d(0px, " + yPos + "px, 0px)"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
