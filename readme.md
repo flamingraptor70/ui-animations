@@ -1,0 +1,1 @@
+# Animation assignments for Metropolia University of Applied Science
