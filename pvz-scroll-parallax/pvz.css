@@ -38,24 +38,24 @@ main {
 }
 
 .img1 {
-  background-image: url(/pvz-scroll-parallax/img/img1.jpeg);
+  background-image: url(img/img1.jpeg);
   background-size: cover;
   background-position: bottom center;
   z-index: 9;
 }
 .img2 {
-  background-image: url(/pvz-scroll-parallax/img/img2.gif);
+  background-image: url(img/img2.gif);
   z-index: 10;
   background-position: center;
 }
 .img4 {
-  background-image: url(/pvz-scroll-parallax/img/img4.png);
+  background-image: url(img/img4.png);
   z-index: 12;
   background-position: bottom right;
   background-size: 20%;
 }
 .img5 {
-  background-image: url(/pvz-scroll-parallax/img/img5.png);
+  background-image: url(img/img5.png);
   z-index: 13;
   background-position: bottom left;
   background-size: contain;
@@ -77,14 +77,14 @@ main {
 }
 
 .und1 {
-  background-image: url(/pvz-scroll-parallax/img/underground.jpeg);
+  background-image: url(img/underground.jpeg);
   z-index: 20;
   background-position: top center;
   background-size: cover;
 }
 
 .und2 {
-  background-image: url(/pvz-scroll-parallax/img/Zombiechinaipad.jpg);
+  background-image: url(img/Zombiechinaipad.jpg);
   z-index: 21;
   background-position: bottom center;
   width: 100%;
