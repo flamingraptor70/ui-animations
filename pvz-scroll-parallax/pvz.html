@@ -9,13 +9,12 @@
   <body>
     <!-- tämä divi pitää tilan jonka päälle pistetään fiksatut divit-->
     <div class="garden">
-      <div class="background" data-type="parallax" data-speed="5"></div>
-      <div class="pots" data-type="parallax" data-speed="20"></div>
-      <div class="plant-1" data-type="parallax" data-speed="40"></div>
-      <div class="plant-2" data-type="parallax" data-speed="60 "></div>
-      <div class="plant-3" data-type="parallax" data-speed="80"></div>
-      <div class="plant-4" data-type="parallax" data-speed="100"></div>
+      <div class="garden_layer img1" data-type="parallax" data-speed="10"></div>
+      <div class="garden_layer img2" data-type="parallax" data-speed="30"></div>
+      <div class="garden_layer img4" data-type="parallax" data-speed="90"></div>
+      <div class="garden_layer img5" data-type="parallax" data-speed="50"></div>
     </div>
+
     <main>
       <h1>Plants vs Zombies</h1>
       <p>
@@ -26,6 +25,15 @@
         ducimus nihil illo, ipsum non ut voluptates quod adipisci eligendi?
       </p>
     </main>
+
+    <div class="underground">
+      <div
+        class="underground_layer und2"
+        data-type="parallax"
+        data-speed="10"
+      ></div>
+    </div>
+
     <script>
       window.addEventListener("scroll", function (event) {
         var top = this.pageYOffset;

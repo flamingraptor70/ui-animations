@@ -1,68 +1,92 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
 }
 
-.hero {
-    height: 700px;
-    background-color: aquamarine;
+.garden {
+  height: 700px;
+  background-color: rgb(64, 51, 36);
 }
 
 main {
-    color: whitesmoke;
-    padding: 40px;
-    position: relative;
-    z-index: 1000;
-    background-color: black;
+  color: whitesmoke;
+  padding: 40px;
+  height: 500px;
+  position: relative;
+  z-index: 1000;
+  background-color: rgb(64, 51, 36);
 }
 
-.hero_layer {
-    width: 100%;
-    height: 700px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    /* BG säännöt ovat nyt suhteessa selaimen ikkunaan */
-    /* background-attachment: fixed; */
-    background-size: auto;
-    position: fixed;
+.garden_layer {
+  width: 100%;
+  height: 700px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  /* BG säännöt ovat nyt suhteessa selaimen ikkunaan */
+  /* background-attachment: fixed; */
+  background-size: auto;
+  position: fixed;
 }
 
-.background {
-    background-image: url(/pvz-scroll-parallax/img/Background_Greenhouse.png);
+.img1 {
+  background-image: url(/pvz-scroll-parallax/img/img1.jpeg);
+  background-size: cover;
+  background-position: bottom center;
+  z-index: 9;
 }
-.pots {
-    background-image: url(/pvz-scroll-parallax/img/Flower-pot_HD.png);
-    z-index: 10;
+.img2 {
+  background-image: url(/pvz-scroll-parallax/img/img2.gif);
+  z-index: 10;
+  background-position: center;
 }
-.plant-1{
-    background-image: url(/scroll-parallax/img/ilu_03.png);
-    z-index: 11;
+.img4 {
+  background-image: url(/pvz-scroll-parallax/img/img4.png);
+  z-index: 12;
+  background-position: bottom right;
+  background-size: 20%;
 }
-.plant-2 {
-    background-image: url(/scroll-parallax/img/ilu_04.png);
-    z-index: 12;
+.img5 {
+  background-image: url(/pvz-scroll-parallax/img/img5.png);
+  z-index: 13;
+  background-position: bottom left;
+  background-size: contain;
+  background-size: 20%;
+}
 
-}
-.plant-3 {
-    background-image: url(/scroll-parallax/img/ilu_05.png);
-    z-index: 13;
-}
-.plant-4 {
-    background-image: url(/scroll-parallax/img/ilu_06.png);
-    z-index: 14;
+.underground {
+  height: 50px;
+  background-color: rgb(64, 51, 36);
 }
 
-.mouseparallax {
-    color: white;
-    background-color: black;
-    position: relative;
-    z-index: 30;
-    height: 700px;
+.underground_layer {
+  width: 100%;
+  height: 700px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.und1 {
+  background-image: url(/pvz-scroll-parallax/img/underground.jpeg);
+  z-index: 20;
+  background-position: top center;
+  background-size: cover;
+}
+
+.und2 {
+  background-image: url(/pvz-scroll-parallax/img/Zombiechinaipad.jpg);
+  z-index: 21;
+  background-position: bottom center;
+  width: 100%;
+  background-size: cover;
 }
