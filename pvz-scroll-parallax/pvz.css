@@ -34,28 +34,28 @@ main {
     position: fixed;
 }
 
-.kuva1 {
-    background-image: url(/img/ilu_01.jpg);
+.background {
+    background-image: url(/pvz-scroll-parallax/img/Background_Greenhouse.png);
 }
-.kuva2 {
-    background-image: url(/img/ilu_02.png);
+.pots {
+    background-image: url(/pvz-scroll-parallax/img/Flower-pot_HD.png);
     z-index: 10;
 }
-.kuva3 {
-    background-image: url(/img/ilu_03.jpg);
+.plant-1{
+    background-image: url(/scroll-parallax/img/ilu_03.png);
     z-index: 11;
 }
-.kuva4 {
-    background-image: url(/img/ilu_04.png);
+.plant-2 {
+    background-image: url(/scroll-parallax/img/ilu_04.png);
     z-index: 12;
 
 }
-.kuva5 {
-    background-image: url(/img/ilu_05.png);
+.plant-3 {
+    background-image: url(/scroll-parallax/img/ilu_05.png);
     z-index: 13;
 }
-.kuva6 {
-    background-image: url(/img/ilu_06.png);
+.plant-4 {
+    background-image: url(/scroll-parallax/img/ilu_06.png);
     z-index: 14;
 }
 
