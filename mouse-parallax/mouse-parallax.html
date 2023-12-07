@@ -7,6 +7,10 @@
   </head>
 
   <style>
+    * {
+      font-family: "Courier New", Courier, monospace;
+    }
+
     main {
       color: white;
       padding: 30px;
@@ -15,11 +19,11 @@
       background-color: black;
     }
 
-    #zen-garden {
+    #field {
       width: 100%;
       height: calc(100vh - 30px);
       background-color: purple;
-      background-image: url(./img/Background_Greenhouse.png);
+      background-image: url(/mouse-parallax/img/FIeld.png);
       background-repeat: no-repeat;
       background-position: center center;
       background-attachment: fixed;
@@ -27,76 +31,72 @@
       position: relative;
       overflow: hidden;
     }
-    .layer_1 {
+
+    #field img {
       position: absolute;
-      left: 29%;
-      top: 50%;
-      background-image: url(./img/Flower-pot_HD.png);
-      z-index: 1;
-      width: 100px;
-      height: 100px;
-      background-repeat: no-repeat;
-      background-size: contain;
+      object-fit: contain;
     }
 
-    .layer_2 {
-      position: absolute;
-      left: 28.5%;
-      top: 40%;
-      background-image: url(./img/plants-vs-zombies-png-pvz2-7-jpg-191447-png-950.png);
-      z-index: 2;
-      width: 150px;
-      height: 150px;
-      size: 20%;
-      background-repeat: no-repeat;
-      background-size: contain;
+    #flowerPot,
+    #plantsVsZombies1,
+    #plantsVsZombies2,
+    #soldierPea,
+    #sunflower {
+      width: 50%; /* Adjust the initial width as needed */
     }
 
-    .layer_3 {
-      position: absolute;
-      left: 60%;
-      top: 20%;
-      background-image: url(./img/298147447058211-4168035417.png);
-      z-index: 3;
-      width: 400px;
-      height: 400px;
-      size: 20%;
-      background-repeat: no-repeat;
-      background-size: contain;
+    #flowerPot {
+      /* Add styles specific to the #flowerPot element */
     }
 
-    #mouse,
-    #mouse-center {
+    #plantsVsZombies1 {
+      /* Add styles specific to the #plantsVsZombies1 element */
+    }
+
+    #plantsVsZombies2 {
+      /* Add styles specific to the #plantsVsZombies2 element */
+    }
+
+    #soldierPea {
+      /* Add styles specific to the #soldierPea element */
+    }
+
+    #sunflower {
+      /* Add styles specific to the #sunflower element */
+    }
+
+    #field h2 {
+      text-align: center;
+      position: relative;
       color: white;
-      border: 1px solid rgb(91, 44, 44);
-      width: 200px;
-      height: 100px;
-    }
-
-    #mouse {
-      position: absolute;
-      top: 40px;
-      right: 20px;
-      z-index: 3;
-    }
-
-    #mouse-center {
-      position: absolute;
-      top: 140px;
-      right: 20px;
-      z-index: 4;
+      font-size: 10vw;
     }
   </style>
 
   <body>
-    <!-- Posotion relative -->
-    <div id="zen-garden">
-      <!-- Position absolute -->
-      <div class="layer_1"></div>
-      <div class="layer_2"></div>
-      <div class="layer_3"></div>
-      <div id="mouse"></div>
-      <div id="mouse-center"></div>
+    <div id="field">
+      <img id="flowerPot" src="/mouse-parallax/img/Flower-pot_HD.png" alt="" />
+      <img
+        id="plantsVsZombies1"
+        src="/mouse-parallax/img/plants-vs-zombies-png-https-cdn0-vox-cdn-com-uploads-chorus-asset-file-2746912-kernalpult-copy-1371051600-png-plans-vs-zombie-kitki-pinterest-plants-vs-zombies-3422.png"
+        alt=""
+      />
+      <img
+        id="plantsVsZombies2"
+        src="/mouse-parallax/img/plants-vs-zombies-png-pvz2-7-jpg-191447-png-950.png"
+        alt=""
+      />
+      <img
+        id="soldierPea"
+        src="/mouse-parallax/img/plants-vs-zombies-png-soldier-pea-png-384.png"
+        alt=""
+      />
+      <img
+        id="sunflower"
+        src="/mouse-parallax/img/plants-vs-zombies-png-sunflower-png-1460.png"
+        alt=""
+      />
+      <h2>Plants Vs Zombies</h2>
     </div>
 
     <main>
