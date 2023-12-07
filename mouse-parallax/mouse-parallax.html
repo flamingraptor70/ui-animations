@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <style>
+    main {
+      color: white;
+      padding: 30px;
+      position: relative;
+      z-index: 100;
+      background-color: black;
+    }
+
+    #zen-garden {
+      width: 100%;
+      height: calc(100vh - 30px);
+      background-color: purple;
+      background-image: url(./img/Background_Greenhouse.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+    .layer_1 {
+      position: absolute;
+      left: 29%;
+      top: 50%;
+      background-image: url(./img/Flower-pot_HD.png);
+      z-index: 1;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .layer_2 {
+      position: absolute;
+      left: 28.5%;
+      top: 40%;
+      background-image: url(./img/plants-vs-zombies-png-pvz2-7-jpg-191447-png-950.png);
+      z-index: 2;
+      width: 150px;
+      height: 150px;
+      size: 20%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .layer_3 {
+      position: absolute;
+      left: 60%;
+      top: 20%;
+      background-image: url(./img/298147447058211-4168035417.png);
+      z-index: 3;
+      width: 400px;
+      height: 400px;
+      size: 20%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #mouse,
+    #mouse-center {
+      color: white;
+      border: 1px solid rgb(91, 44, 44);
+      width: 200px;
+      height: 100px;
+    }
+
+    #mouse {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      z-index: 3;
+    }
+
+    #mouse-center {
+      position: absolute;
+      top: 140px;
+      right: 20px;
+      z-index: 4;
+    }
+  </style>
+
+  <body>
+    <!-- Posotion relative -->
+    <div id="zen-garden">
+      <!-- Position absolute -->
+      <div class="layer_1"></div>
+      <div class="layer_2"></div>
+      <div class="layer_3"></div>
+      <div id="mouse"></div>
+      <div id="mouse-center"></div>
+    </div>
+
+    <main>
+      <h1>Mouse parallax</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam
+        praesentium quasi. Odio magni aliquam quis nemo dolorem ipsam quisquam
+        temporibus illo voluptas numquam? Architecto corporis repudiandae
+        numquam error? Dolorem sed facilis eum error, illum tempore est quae eos
+        id reprehenderit culpa corrupti minima nesciunt modi. Minima, molestias
+        earum. Magnam, assumenda! Minima vero veniam tempora excepturi fugiat
+        amet quo ratione officiis, eligendi fugit ipsum aliquid expedita quasi
+        doloribus ea unde officia corporis, architecto, voluptatem animi maxime
+        quod molestias quisquam illo. Tenetur ex laudantium incidunt maxime quia
+        velit minus distinctio provident, est error, quidem corrupti alias
+        tempora odio tempore architecto magni placeat earum doloremque sunt
+        laborum sed mollitia dolorum! Eaque expedita minus labore, quo neque
+        porro minima qui itaque tempore nisi ducimus quas autem obcaecati,
+        maxime quod pariatur dicta eum quae! Quod corporis at, temporibus rerum
+        enim libero eius maiores deserunt dolore porro nisi itaque aliquam id
+        quisquam, sapiente ea molestiae ipsa doloremque perferendis, labore
+        officia. Consectetur enim quae accusantium deleniti. Porro corrupti ipsa
+        delectus quo, nemo fugit distinctio rerum dolorem tempora saepe deleniti
+        quam autem modi incidunt, ratione numquam soluta quis veniam. Aut dolore
+        eos ab harum quia dignissimos quas nihil perspiciatis temporibus
+        quibusdam, ut nostrum similique ducimus architecto quasi ex, quos illum
+        rerum velit officiis. Illum quae suscipit enim iusto consequatur, sit
+        nesciunt iure quidem ratione sapiente accusamus! Possimus explicabo qui
+        recusandae fuga tempore obcaecati, consequuntur voluptas perspiciatis
+        repellendus voluptates? Fugit alias dolore ad earum obcaecati blanditiis
+        iusto laborum, officia quia praesentium neque ipsum, saepe facilis quo
+        debitis dolorum inventore reprehenderit accusamus atque veritatis fuga.
+        Expedita, ducimus aspernatur. Ut qui omnis vitae quasi voluptatem sequi
+        quod autem dolorem dolor voluptatibus rerum, consequatur corporis quam,
+        esse quo aut explicabo perspiciatis voluptas sint sed repellendus
+        aliquam nulla possimus maxime! Laudantium dolor neque quibusdam
+        reprehenderit in illum nesciunt aperiam ipsum amet debitis animi, illo
+        maxime quo iste soluta error eligendi, deleniti voluptas nulla
+        necessitatibus ipsam consequuntur id libero. Fuga perferendis facere,
+        molestiae ratione dignissimos assumenda corporis deleniti inventore
+        eligendi praesentium? Impedit cupiditate quasi nulla itaque amet quod
+        quis ad deserunt, omnis exercitationem earum nostrum eaque expedita ut
+        blanditiis veniam maxime obcaecati iste error porro. Non iste molestias
+        dicta vero perspiciatis ipsum possimus magni aut soluta. Amet, libero
+        nisi accusantium assumenda voluptas facilis itaque tempora modi minima
+        voluptates aspernatur aliquam dolores praesentium enim in. Libero,
+        assumenda hic temporibus recusandae maxime obcaecati perferendis
+        blanditiis nam labore iure harum voluptatum voluptates dolore ipsa,
+        rerum quia.
+      </p>
+    </main>
+  </body>
+
+  <script></script>
 </html>
